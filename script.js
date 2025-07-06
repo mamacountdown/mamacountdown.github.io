@@ -14,3 +14,16 @@ const countDownFn = () => {
   let timeSpan = eventDay - now;
 }
 
+if (timeSpan <= -today) {
+  console.log("Sind wir da?");
+  clearInterval(interval);
+}
+else {
+  const days = Math.floor(timeSpan / day)
+  const hours = Math.floor((timeSpan % day) / hour)
+  const minutes = Math.floor((timeSpan % hour) / minute)
+  const seconds = Math.floor((timeSpan % minute) / second)
+
+  console.log(days + ":" + hours + ":" + minutes + ":" + seconds);
+}
+
