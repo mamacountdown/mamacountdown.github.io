@@ -1,5 +1,5 @@
 let interval;
-const eventDay = new Date(Date.parse('2025-07-16T22:30:00');
+const eventDay = new Date(Date.parse("2025-07-16T22:30:00"));
 
 const second = 1000;
 const minute = second * 60;
